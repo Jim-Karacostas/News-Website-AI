@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>News Website</h1>
+    <div class="switch-container">
+        <div class="switch">
+          <label>
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+    </div>      
+    <div id="categories">
+      <button id="category-business" data-category="business">Business</button>
+      <button id="category-entertainment" data-category="entertainment">Entertainment</button>
+      <button id="category-science" data-category="science">Science</button>
+      <button id="category-health" data-category="health">Health</button>
+      <button data-category="technology">Technology</button>
+      <button data-category="sports">Sports</button>
+    </div>
+    <br>
+    <form id="search-form">
+      <label for="search-query">Search:</label>
+      <input type="text" id="search-query" name="search-query">
+      <button type="submit">Search</button>
+    </form>
+    <br>
+    <div id="news-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
